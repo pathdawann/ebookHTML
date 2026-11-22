@@ -870,3 +870,20 @@ th {
     scroll-behavior: auto;
   }
 }
+
+.next-step-box {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  background: var(--paper);
+  border: 2px solid var(--line);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.next-step-box h3 {
+  font-size: clamp(18px, 2.5vw, 22px);
+}
