@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Guía interactiva de CSS · Patricia Mago</title>
+  <title>Guía interactiva de HTML · Patricia Mago</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -12,49 +12,35 @@
 <body>
   <header class="bar">
     <div class="bar-in">
-      <a href="#top" class="brand">Guía de CSS</a>
-      <a href="#toc" class="btn pill-prog" id="nav-prog" title="Ver índice de capítulos">0 / 12</a>
-      <button class="btn" id="th" type="button" aria-label="Cambiar tema">🌙 Oscuro</button>
+      <a href="#top" class="brand">Guía de HTML</a>
+      <a href="#toc" class="btn pill-prog" id="nav-prog" title="Ver índice de capítulos">0 / 13</a>
+      <button class="btn" id="th" type="button" aria-label="Cambiar tema">🌙 Tema</button>
       <div class="prog" id="pg"></div>
     </div>
   </header>
 
   <main id="top">
     <section class="sheet hero">
-      <p class="lead hero-kicker">Guía interactiva · del primer color al diseño responsive</p>
-      <h1>Dale estilo a la web con <span>CSS</span></h1>
-      <p class="lead hero-sub">Edita el CSS de la izquierda y mira cómo cambia la tarjeta al instante. Cada capítulo tiene un laboratorio para experimentar.</p>
+      <p class="lead hero-kicker">Guía interactiva · nivel básico a intermedio</p>
+      <h1>Aprende <span>HTML</span> escribiéndolo</h1>
+      <p class="lead hero-sub">Qué es, de dónde viene, cómo funciona y cómo usarlo bien. Empieza editando el código de abajo: el resultado cambia al instante.</p>
 
       <div class="live">
         <div class="ed-wrap">
           <div class="ed-head">
-            <span>styles.css</span>
-            <button type="button" class="mini-btn" id="ed-reset" title="Restaurar CSS inicial">↺ Reiniciar</button>
+            <span>index.html</span>
+            <button type="button" class="mini-btn" id="ed-reset" title="Restaurar código inicial">↺ Reiniciar</button>
           </div>
-          <textarea id="ed" aria-label="Editor de CSS" spellcheck="false">.card {
-  background: #ffd92e;
-  color: #1b1340;
-  padding: 20px;
-  border-radius: 24px;
-}
-h3 { font-size: 28px; }
-.btn2 { background: #5b1ae8; color: white;
-  padding: 8px 16px; border-radius: 99px; }</textarea>
+          <textarea id="ed" aria-label="Editor de HTML" spellcheck="false"><h1>¡Hola, mundo!</h1>
+<p>Escribo <strong>HTML</strong> y
+funciona. <a href="#t6">Ver etiquetas</a></p>
+<ul><li>Prueba cambiar este texto</li></ul></textarea>
         </div>
         <div class="out-wrap">
           <div class="out-head">Vista previa en vivo</div>
-          <div class="out">
-            <div id="lab">
-              <div class="card">
-                <h3>Mi tarjeta</h3>
-                <p>Cambia los colores y los bordes.</p>
-                <span class="btn2">Botón</span>
-              </div>
-            </div>
-          </div>
+          <div class="out" id="ov" aria-live="polite"></div>
         </div>
       </div>
-      <style id="lst"></style>
 
       <p class="author-tag">Patricia Mago · @pathdawann</p>
     </section>
@@ -64,212 +50,167 @@ h3 { font-size: 28px; }
       <p class="lead">Toca un capítulo para ir directo a él. Los que ya recorriste se marcan en verde.</p>
       <p id="toc-n"></p>
       <ol class="toc">
-        <li><a href="#t1"><b>1</b>¿Qué es CSS?</a></li>
-        <li><a href="#t2"><b>2</b>Sintaxis básica</a></li>
-        <li><a href="#t3"><b>3</b>Cómo añadir CSS</a></li>
-        <li><a href="#t4"><b>4</b>Selectores</a></li>
-        <li><a href="#t5"><b>5</b>Modelo de caja</a></li>
-        <li><a href="#t6"><b>6</b>Color y tipografía</a></li>
-        <li><a href="#t7"><b>7</b>Flexbox</a></li>
-        <li><a href="#t8"><b>8</b>Grid</a></li>
-        <li><a href="#t9"><b>9</b>Diseño responsive</a></li>
-        <li><a href="#t10"><b>10</b>Transiciones y animaciones</a></li>
-        <li><a href="#t11"><b>11</b>Ponte a prueba</a></li>
-        <li><a href="#t12"><b>12</b>Sigue aprendiendo</a></li>
+        <li><a href="#t1"><b>1</b>¿Qué es HTML?</a></li>
+        <li><a href="#t2"><b>2</b>Un poco de historia</a></li>
+        <li><a href="#t3"><b>3</b>Cómo funciona una página</a></li>
+        <li><a href="#t4"><b>4</b>Anatomía de un elemento</a></li>
+        <li><a href="#t5"><b>5</b>Estructura del documento</a></li>
+        <li><a href="#t6"><b>6</b>Explorador de etiquetas</a></li>
+        <li><a href="#t7"><b>7</b>Semántica</a></li>
+        <li><a href="#t8"><b>8</b>Formularios</a></li>
+        <li><a href="#t9a"><b>9</b>Accesibilidad</a></li>
+        <li><a href="#t8b"><b>10</b>Buenas prácticas</a></li>
+        <li><a href="#t9"><b>11</b>Ponte a prueba</a></li>
+        <li><a href="#t12"><b>12</b>Proyecto final</a></li>
+        <li><a href="#t10"><b>13</b>Sigue aprendiendo</a></li>
       </ol>
     </section>
 
     <section class="sheet" id="t1">
-      <h2><i>1</i>¿Qué es CSS?</h2>
-      <p class="lead"><b>Cascading Style Sheets</b>: el lenguaje que controla cómo se ve el HTML: colores, tipografías, espacios y distribución. HTML pone el contenido; CSS lo viste. Pulsa el botón y compruébalo.</p>
-      <div class="tabs">
-        <button type="button" class="btn" id="tg">Quitar CSS</button>
+      <h2><i>1</i>¿Qué es HTML?</h2>
+      <p class="lead"><b>HyperText Markup Language</b>: un lenguaje de marcado que describe la estructura y el significado del contenido. No es un lenguaje de programación: no tiene condiciones ni bucles. Es el esqueleto de la web.</p>
+      <div class="tabs" role="tablist">
+        <button type="button" class="chip on" data-tab="h">HTML</button>
+        <button type="button" class="chip" data-tab="c">CSS</button>
+        <button type="button" class="chip" data-tab="j">JavaScript</button>
       </div>
-      <article class="dm on" id="dm">
-        <h3>Curso de CSS</h3>
-        <p>Aprende a dar estilo a la web.</p>
-        <a href="#t2" class="bt">Empezar</a>
-      </article>
+      <div class="panel on" id="h"><b>El esqueleto.</b> Define qué es un título, un párrafo, una lista o una imagen. Sin HTML no hay página.</div>
+      <div class="panel" id="c"><b>La piel y la ropa.</b> Controla colores, tipografías, espacios y el diseño en pantalla.</div>
+      <div class="panel" id="j"><b>Los músculos.</b> Añade comportamiento: menús que se abren, formularios que validan, juegos.</div>
     </section>
 
     <section class="sheet" id="t2">
-      <h2><i>2</i>Sintaxis básica</h2>
-      <p class="lead">Una regla CSS dice <em>a quién</em> aplicar <em>qué</em>. Toca cada parte para inspeccionarla.</p>
-      <div class="anat" id="an">
-        <button type="button" data-k="Selector: elige a qué elementos se aplica la regla." class="tk-tag">p</button>
-        <button type="button" data-k="Llave de apertura: empieza el bloque de declaraciones." class="tk-txt">{</button>
-        <button type="button" data-k="Propiedad: lo que quieres cambiar." class="tk-attr">color</button><button type="button" data-k="Dos puntos: separan propiedad y valor." class="tk-txt">:</button>
-        <button type="button" data-k="Valor: cómo lo quieres." class="tk-val">violet</button><button type="button" data-k="Punto y coma: termina la declaración." class="tk-txt">;</button>
-        <button type="button" data-k="Llave de cierre: termina el bloque." class="tk-txt">}</button>
-      </div>
-      <div class="note" id="an-n">Regla = selector + { propiedad: valor; }</div>
+      <h2><i>2</i>Un poco de historia</h2>
+      <ul class="tl">
+        <li><b>1989–1991</b> · Tim Berners-Lee, en el CERN, propone un sistema de documentos enlazados. Nace la web.</li>
+        <li><b>1995</b> · HTML 2.0: primer estándar formal.</li>
+        <li><b>1997–1999</b> · HTML 3.2 y 4.01: tablas, formularios y soporte para CSS.</li>
+        <li><b>2014</b> · HTML5 es recomendación oficial: etiquetas semánticas, audio y video nativos.</li>
+        <li><b>Desde 2019</b> · HTML Living Standard, mantenido por WHATWG: ya no hay versiones, evoluciona de forma continua.</li>
+      </ul>
     </section>
 
     <section class="sheet" id="t3">
-      <h2><i>3</i>Cómo añadir CSS</h2>
-      <div class="tabs" role="tablist">
-        <button type="button" class="chip on" data-tab="i1">En línea</button>
-        <button type="button" class="chip" data-tab="i2">Interno</button>
-        <button type="button" class="chip" data-tab="i3">Externo</button>
+      <h2><i>3</i>Cómo funciona una página</h2>
+      <p class="lead">Pulsa el botón para recorrer lo que pasa cuando escribes una dirección.</p>
+      <button type="button" class="btn mt-12" id="go">▶ Ver paso a paso</button>
+      <div class="steps" id="st">
+        <div class="step"><span>1</span>El navegador pide la página a un servidor (HTTP).</div>
+        <div class="step"><span>2</span>El servidor responde con un archivo HTML.</div>
+        <div class="step"><span>3</span>El navegador lo lee y construye el DOM, un árbol de elementos.</div>
+        <div class="step"><span>4</span>Descarga CSS, imágenes y JavaScript que el HTML menciona.</div>
+        <div class="step"><span>5</span>Dibuja la página en pantalla.</div>
       </div>
-      <div class="panel on" id="i1"><b>Atributo style.</b> Solo para pruebas rápidas.<pre>&lt;p style="color: green;"&gt;Hola&lt;/p&gt;</pre></div>
-      <div class="panel" id="i2"><b>Etiqueta style</b> dentro del head. Útil en una sola página.<pre>&lt;style&gt;
-  p { color: green; }
-&lt;/style&gt;</pre></div>
-      <div class="panel" id="i3"><b>Archivo .css externo</b>: lo recomendado. Un mismo archivo da estilo a todo el sitio.<pre>&lt;link rel="stylesheet" href="styles.css"&gt;</pre></div>
     </section>
 
     <section class="sheet" id="t4">
-      <h2><i>4</i>Selectores</h2>
-      <p class="lead">Elige un selector y mira qué elementos del recuadro selecciona.</p>
-      <div class="tabs" id="chips"></div>
-      <div class="note" id="sl-d"></div>
-      <div class="stage" id="sd">
-        <p>Párrafo normal</p>
-        <p class="nota">Párrafo con class nota</p>
-        <p id="unico">Párrafo con id unico</p>
-        <ul>
-          <li>Elemento 1</li>
-          <li>Elemento 2</li>
-          <li>Elemento 3</li>
-        </ul>
-        <a href="#t4">Un enlace</a>
+      <h2><i>4</i>Anatomía de un elemento</h2>
+      <p class="lead">Toca cada parte del código para inspeccionarla.</p>
+      <div class="anat" id="an">
+        <button type="button" data-k="Etiqueta de apertura: dice qué elemento empieza." class="tk-tag">&lt;p</button>
+        <button type="button" data-k="Atributo: nombre del dato extra (aquí, class)." class="tk-attr">class</button>=<button type="button" data-k="Valor del atributo, siempre entre comillas rectas." class="tk-val">"saludo"</button><button type="button" data-k="Fin de la etiqueta de apertura." class="tk-tag">&gt;</button><button type="button" data-k="Contenido: lo que ve el usuario." class="tk-txt">¡Hola!</button><button type="button" data-k="Etiqueta de cierre: lleva una barra /." class="tk-tag">&lt;/p&gt;</button>
       </div>
+      <div class="note" id="an-n">Elemento = apertura + contenido + cierre.</div>
+      <p class="lead mt-12">Los <b>elementos vacíos</b> (<code>img</code>, <code>br</code>, <code>hr</code>, <code>input</code>, <code>meta</code>, <code>link</code>) no tienen contenido ni etiqueta de cierre.</p>
     </section>
 
     <section class="sheet" id="t5">
-      <h2><i>5</i>Modelo de caja</h2>
-      <p class="lead">Todo elemento es una caja: contenido, <b>padding</b> (espacio interno), <b>border</b> (borde) y <b>margin</b> (espacio externo).</p>
-      <div class="ctl">
-        <label>padding <input type="range" id="rp" min="0" max="40" value="16"></label>
-        <label>border <input type="range" id="rb" min="0" max="16" value="4"></label>
-        <label>margin <input type="range" id="rm" min="0" max="40" value="20"></label>
-      </div>
-      <div class="stage">
-        <div id="bm">
-          <div class="bx">
-            <div class="ct">Contenido</div>
-          </div>
-        </div>
-      </div>
-      <pre id="bm-c"></pre>
+      <h2><i>5</i>Estructura del documento</h2>
+      <pre><span class="c">&lt;!-- Todo documento parte de aquí --&gt;</span>
+<span class="t">&lt;!DOCTYPE html&gt;</span>
+<span class="t">&lt;html</span> <span class="a">lang</span>=<span class="v">"es"</span><span class="t">&gt;</span>
+  <span class="t">&lt;head&gt;</span>
+    <span class="t">&lt;meta</span> <span class="a">charset</span>=<span class="v">"UTF-8"</span><span class="t">&gt;</span>
+    <span class="t">&lt;meta</span> <span class="a">name</span>=<span class="v">"viewport"</span> <span class="a">content</span>=<span class="v">"width=device-width, initial-scale=1.0"</span><span class="t">&gt;</span>
+    <span class="t">&lt;title&gt;</span>Mi primera página<span class="t">&lt;/title&gt;</span>
+  <span class="t">&lt;/head&gt;</span>
+  <span class="t">&lt;body&gt;</span>
+    <span class="t">&lt;h1&gt;</span>¡Hola, mundo!<span class="t">&lt;/h1&gt;</span>
+  <span class="t">&lt;/body&gt;</span>
+<span class="t">&lt;/html&gt;</span></pre>
+      <p class="lead"><b>doctype</b> activa el HTML moderno · <b>lang</b> declara el idioma · <b>charset</b> evita que se rompan las tildes · <b>viewport</b> hace la página responsive · <b>title</b> es el texto de la pestaña y de los buscadores · <b>body</b> es todo lo visible.</p>
     </section>
 
     <section class="sheet" id="t6">
-      <h2><i>6</i>Color y tipografía</h2>
-      <div class="ctl">
-        <label>Texto <input type="color" id="tc" value="#1b1340"></label>
-        <label>Fondo <input type="color" id="tb" value="#ffd92e"></label>
-        <label>Tamaño <input type="range" id="ts" min="14" max="36" value="22"></label>
-        <label>Radio <input type="range" id="tr" min="0" max="40" value="16"></label>
-        <label>Fuente
-          <select id="tf">
-            <option value="Poppins, sans-serif">Sans</option>
-            <option value="Georgia, serif">Serif</option>
-            <option value="'JetBrains Mono', monospace">Mono</option>
-          </select>
-        </label>
-      </div>
-      <div class="stage">
-        <div id="ty" class="ty-sample">Texto con estilo propio</div>
-      </div>
-      <pre id="ty-c"></pre>
-      <div class="note" id="ty-n"></div>
+      <h2><i>6</i>Explorador de etiquetas</h2>
+      <p class="lead">Elige una etiqueta: verás para qué sirve, su código y cómo se ve.</p>
+      <div class="tabs" id="chips"></div>
+      <div class="note" id="tg-d"></div>
+      <pre id="tg-c"></pre>
+      <div class="out out-bordered" id="tg-o"></div>
     </section>
 
     <section class="sheet" id="t7">
-      <h2><i>7</i>Flexbox</h2>
-      <p class="lead">Distribuye elementos en una sola dimensión (fila o columna). Juega con las propiedades.</p>
-      <div class="ctl">
-        <label>flex-direction
-          <select id="fd">
-            <option>row</option>
-            <option>column</option>
-          </select>
-        </label>
-        <label>justify-content
-          <select id="fj">
-            <option>flex-start</option>
-            <option>center</option>
-            <option>flex-end</option>
-            <option>space-between</option>
-            <option>space-around</option>
-          </select>
-        </label>
-        <label>align-items
-          <select id="fa">
-            <option>flex-start</option>
-            <option>center</option>
-            <option>flex-end</option>
-            <option>stretch</option>
-          </select>
-        </label>
-        <label>gap <input type="range" id="fg" min="0" max="40" value="10"></label>
+      <h2><i>7</i>Semántica: la etiqueta correcta</h2>
+      <p class="lead">Usar etiquetas con significado mejora la accesibilidad y el SEO. Toca cada zona.</p>
+      <div class="layout" id="ly">
+        <button type="button" class="w" data-k="header: cabecera de la página o sección; suele llevar logo y título.">&lt;header&gt;</button>
+        <button type="button" class="w" data-k="nav: bloque de navegación con enlaces principales.">&lt;nav&gt;</button>
+        <button type="button" class="w" data-k="main: contenido principal; solo uno visible por página. Dentro van section y article.">&lt;main&gt;<br>section · article</button>
+        <button type="button" class="w" data-k="aside: contenido complementario, como barras laterales o anuncios.">&lt;aside&gt;</button>
+        <button type="button" class="w" data-k="footer: pie con contacto, enlaces legales y créditos.">&lt;footer&gt;</button>
       </div>
-      <div class="fx" id="fx">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-      </div>
-      <pre id="fx-c"></pre>
+      <div class="note" id="ly-n">Un div no dice nada; estas etiquetas sí.</div>
     </section>
 
     <section class="sheet" id="t8">
-      <h2><i>8</i>Grid</h2>
-      <p class="lead">Distribuye en dos dimensiones: filas y columnas a la vez.</p>
-      <div class="ctl">
-        <label>Columnas <input type="range" id="gc" min="1" max="4" value="3"></label>
-        <label>gap <input type="range" id="gg" min="0" max="30" value="10"></label>
+      <h2><i>8</i>Formularios</h2>
+      <p class="lead">Recogen datos del usuario: contacto, registro, búsquedas. El navegador valida por ti. Prueba enviarlo vacío o con un correo incorrecto.</p>
+      <div class="split-grid">
+        <pre id="fm-c" class="code-sm"></pre>
+        <div>
+          <div id="fm-w"></div>
+          <div class="note" id="fm-r">Completa el formulario y pulsa Enviar.</div>
+        </div>
       </div>
-      <div class="gr" id="gr">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
+      <table class="mt-16">
+        <tr><th>Atributo</th><th>Qué hace</th></tr>
+        <tr><td><code>action</code> / <code>method</code></td><td>URL de destino y modo de envío: POST va en el cuerpo, GET en la URL</td></tr>
+        <tr><td><code>label for</code> + <code>id</code></td><td>Vincula la etiqueta con su campo; al hacer clic se activa</td></tr>
+        <tr><td><code>name</code></td><td>Nombre con el que el servidor recibe el dato</td></tr>
+        <tr><td><code>required</code>, <code>minlength</code>, <code>min</code>, <code>max</code>, <code>pattern</code></td><td>Validación nativa, sin JavaScript</td></tr>
+        <tr><td><code>autocomplete</code></td><td>Permite autocompletar datos conocidos</td></tr>
+      </table>
+      <p class="lead mt-12">Los radio comparten el mismo <code>name</code> para elegir solo uno; agrúpalos con <code>fieldset</code> y <code>legend</code>. La validación del navegador no reemplaza la del servidor.</p>
+    </section>
+
+    <section class="sheet" id="t9a">
+      <h2><i>9</i>Accesibilidad</h2>
+      <p class="lead">Una web accesible la puede usar cualquier persona: con lector de pantalla, solo con teclado o con baja visión. Casi todo se logra con HTML bien escrito.</p>
+      <table class="mt-14">
+        <tr><th>Haz esto</th><th>Evita esto</th></tr>
+        <tr><td><code>alt="Gatito naranja durmiendo"</code></td><td><code>alt="imagen1"</code> o sin alt</td></tr>
+        <tr><td><code>alt=""</code> si la imagen es decorativa</td><td>Describir adornos</td></tr>
+        <tr><td>Enlace: “Descargar la guía”</td><td>Enlace: “haz clic aquí”</td></tr>
+        <tr><td><code>&lt;button&gt;</code> para acciones</td><td><code>&lt;div onclick&gt;</code></td></tr>
+        <tr><td><code>lang</code>, encabezados en orden, <code>label</code> en cada campo</td><td>Saltar de h2 a h5</td></tr>
+      </table>
+      <p class="lead mt-14"><b>Contraste de color.</b> El texto normal necesita una relación mínima de 4,5:1 (nivel AA). Cambia los colores y mídelo.</p>
+      <div class="color-controls">
+        <label>Texto <input type="color" id="cf" value="#1b1340"></label>
+        <label>Fondo <input type="color" id="cb" value="#ffffff"></label>
       </div>
-      <pre id="gr-c"></pre>
+      <div class="cs" id="cs">Texto de muestra</div>
+      <div class="note" id="cr"></div>
+      <p class="lead mt-12"><b>Prueba del teclado:</b> navega esta página con Tab y Enter. Si algo interactivo no se puede alcanzar o no muestra foco, hay un problema. La primera regla de ARIA: si existe una etiqueta nativa correcta, úsala.</p>
+    </section>
+
+    <section class="sheet" id="t8b">
+      <h2><i>10</i>Buenas prácticas</h2>
+      <p class="lead">Marca lo que ya aplicas en tus proyectos (tu progreso se guarda automáticamente).</p>
+      <div id="ckl"></div>
+      <div class="meter"><i id="mt"></i></div>
+      <p id="mt-t" class="meter-label">0 de 6</p>
+      <table class="mt-18">
+        <tr><th>Error común</th><th>Solución</th></tr>
+        <tr><td>Imagen sin <code>alt</code></td><td>Describe siempre la imagen</td></tr>
+        <tr><td><code>id</code> repetido</td><td>Usa <code>class</code> para repetir</td></tr>
+        <tr><td>Comillas curvas “ ” en el código</td><td>Usa comillas rectas (")</td></tr>
+        <tr><td>Tablas para maquetar</td><td>Usa CSS (Flexbox o Grid)</td></tr>
+      </table>
     </section>
 
     <section class="sheet" id="t9">
-      <h2><i>9</i>Diseño responsive</h2>
-      <p class="lead">Un diseño responsive se adapta al ancho disponible. Mueve el control: las columnas cambian con reglas condicionales (aquí con container queries; en toda la página se usan media queries con el ancho de la pantalla).</p>
-      <div class="ctl">
-        <label>Ancho <input type="range" id="rw" min="260" max="900" value="700"></label>
-        <b id="rw-n" class="accent-label"></b>
-      </div>
-      <div class="stage">
-        <div id="rsw">
-          <div class="rg">
-            <div>Uno</div>
-            <div>Dos</div>
-            <div>Tres</div>
-          </div>
-        </div>
-      </div>
-      <pre>@media (min-width: 640px) {
-  .rg { grid-template-columns: repeat(3, 1fr); }
-}</pre>
-      <p class="lead">No olvides en tu HTML: <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></p>
-    </section>
-
-    <section class="sheet" id="t10">
-      <h2><i>10</i>Transiciones y animaciones</h2>
-      <p class="lead">Pasa el cursor sobre el cuadro (transition) o activa la animación (@keyframes). Cambia la duración.</p>
-      <div class="ctl">
-        <label>Duración <input type="range" id="ad" min="2" max="20" value="5"></label>
-        <button type="button" class="btn" id="ak">Animar</button>
-      </div>
-      <div class="stage anim-stage">
-        <div id="anb">CSS</div>
-      </div>
-      <pre>#caja { transition: transform .5s, background .5s; }
-#caja:hover { transform: rotate(15deg) scale(1.25); }
-@keyframes rebote { to { transform: translateY(-34px); } }</pre>
-    </section>
-
-    <section class="sheet" id="t11">
       <div class="sec-head">
         <h2><i>11</i>Ponte a prueba</h2>
         <button type="button" class="mini-btn" id="qz-reset" hidden>↺ Repetir quiz</button>
@@ -279,18 +220,22 @@ h3 { font-size: 28px; }
     </section>
 
     <section class="sheet" id="t12">
-      <h2><i>12</i>Sigue aprendiendo</h2>
-      <p class="lead">Ruta: CSS, luego JavaScript, Git y GitHub, y después un framework. Practica construyendo pequeñas piezas cada día.</p>
-      <p><b>MDN Web Docs</b> (developer.mozilla.org/es) · <b>CSS-Tricks</b> · <b>Flexbox Froggy</b> · <b>Grid Garden</b> · <b>caniuse.com</b></p>
-      <p class="closing-title">¡Nos vemos en el código!</p>
-
-      <div class="next-step-box">
-        <div>
-          <p class="brand-eyebrow">¿Necesitas repasar la base?</p>
-          <h3>Vuelve a practicar la estructura con la Guía de HTML</h3>
-        </div>
-        <a href="https://hey-aprende-html.vercel.app" target="_blank" rel="noopener noreferrer" class="btn">← Ir a Guía de HTML</a>
+      <h2><i>12</i>Proyecto final: tu portafolio</h2>
+      <p class="lead">Activa cada bloque para armar tu página personal. El código se genera a la izquierda y puedes copiarlo a un archivo <code>index.html</code>.</p>
+      <div class="tabs" id="pj-ch"></div>
+      <div class="split-grid">
+        <pre id="pj-c" class="code-sm no-margin"></pre>
+        <div class="out out-bordered out-tall" id="pj-o"></div>
       </div>
+      <button type="button" class="btn mt-12" id="pj-cp">Copiar código</button>
+      <p class="lead mt-12"><b>Retos extra:</b> añade una tabla con tus estudios, un acordeón <code>details</code> de preguntas frecuentes y, cuando aprendas CSS, dale tu estilo propio.</p>
+    </section>
+
+    <section class="sheet" id="t10">
+      <h2><i>13</i>Sigue aprendiendo</h2>
+      <p class="lead">Ruta: HTML, luego CSS, JavaScript, Git y GitHub, y por último un framework. Practica un poco todos los días.</p>
+      <p><b>MDN Web Docs</b> (developer.mozilla.org/es) · <b>freeCodeCamp</b> · <b>CodePen</b> · <b>validator.w3.org</b> · <b>caniuse.com</b></p>
+      <p class="closing-title">¡Nos vemos en el código!</p>
 
       <div class="brand-card">
         <div class="brand-card-top">
@@ -300,7 +245,7 @@ h3 { font-size: 28px; }
           </div>
           <a href="https://patriciamago.vercel.app" target="_blank" rel="noopener noreferrer" class="btn">Ver portafolio</a>
         </div>
-        <p class="lead no-margin">Comunicación corporativa, desarrollo web y automatización. Si esta guía te ayudó a darle estilo a tus proyectos, sigamos conectando.</p>
+        <p class="lead no-margin">Comunicación corporativa, desarrollo web y automatización. Si esta guía te ayudó a dar tus primeros pasos en HTML, sigamos conectando.</p>
 
         <div class="brand-links" aria-label="Enlaces de contacto y redes">
           <a href="https://github.com/patriciamago" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
