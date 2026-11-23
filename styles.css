@@ -887,3 +887,9 @@ th {
 .next-step-box h3 {
   font-size: clamp(18px, 2.5vw, 22px);
 }
+
+.series-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
